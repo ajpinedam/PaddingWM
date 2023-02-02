@@ -1,0 +1,48 @@
+<Page
+    x:Class="PaddingWM.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PaddingWM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <!--<Grid x:Name="targetGrid">
+            <Border Background="AliceBlue">
+                <Ellipse Fill="DarkOrange" />
+            </Border>
+        </Grid>-->
+        <!--Command="{Binding  CreateAccount}"-->
+        <!--Command="{x:Bind  DataContext.CreateAccount}"-->
+        <!--Command="{x:Bind  ViewModel.CreateAccount}"-->
+        <Button Command="{Binding CreateAccount}" Content="Click Me!" Height="40" />
+        <FlipView>
+            <!--<StackPanel>
+                <Button Content="Direct FlipView (not working android)"
+                        Click="ItemClicked"
+                        Command="{Binding  CreateAccount}"
+                        Style="{StaticResource MaterialOutlinedButtonStyle}"
+                        HorizontalAlignment="Stretch"
+                        Margin="0,16,0,0" />
+            </StackPanel>-->
+            <StackPanel>
+                <Button Content="Direct FlipView (not working android)"
+                        Command="{Binding  CreateAccount}"
+                        Style="{StaticResource MaterialOutlinedButtonStyle}"
+                        HorizontalAlignment="Stretch"
+                        Margin="0,16,0,0" />
+            </StackPanel>
+        </FlipView>
+        <Selector>
+            <StackPanel>
+                <Button Content="Direct Selector"
+                        Command="{Binding  CreateAccount}"
+                        Style="{StaticResource MaterialOutlinedButtonStyle}"
+                        HorizontalAlignment="Stretch"
+                        Margin="0,16,0,0" />
+            </StackPanel>
+        </Selector>
+    </StackPanel>
+</Page>

@@ -1,0 +1,21 @@
+{
+  "solution": {
+    "path": "PaddingWM.sln",
+    "projects": [
+		"PaddingWM.Shared\\PaddingWM.Shared.shproj",
+
+		"PaddingWM.Droid\\PaddingWM.Droid.csproj",
+
+		"PaddingWM.iOS\\PaddingWM.iOS.csproj",
+
+
+		"PaddingWM.Wasm\\PaddingWM.Wasm.csproj",
+
+		"PaddingWM.macOS\\PaddingWM.macOS.csproj",
+
+		"PaddingWM.Skia.Gtk\\PaddingWM.Skia.Gtk.csproj",
+
+		"PaddingWM.Skia.Linux.FrameBuffer\\PaddingWM.Skia.Linux.FrameBuffer.csproj",
+    ]
+  }
+}
